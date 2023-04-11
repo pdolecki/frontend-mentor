@@ -1,4 +1,4 @@
-# Frontend Mentor - [NAME OF THE PROJECT]
+# Frontend Mentor - Results Summary Component
 
 ![Desktop Preview](./design/desktop-design.jpg)
 

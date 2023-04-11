@@ -21,6 +21,8 @@ In this repository, you will find my solutions to some of the Frontend Mentor ch
 The challenges that I have completed so far are available at:
 
 - [Product Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/product-preview-component)
+- [Results Summary Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/results-summary-component)
+- [Interactive Rating Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/interactive-rating-component)
 
 ## Technologies Used
 
