@@ -1,0 +1,96 @@
+:root {
+  /* -----FONTS----- */
+  --ff-secondary: "Fraunces", serif;
+  --ff-primary: "Montserrat", sans-serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+  /* -----COLORS----- */
+  --cl-primary-400: hsl(158, 36%, 37%);
+  --cl-primary-500: hsl(158, 36%, 20%);
+  --cl-secondary-200: hsl(30, 38%, 92%);
+  --cl-neutral-100: hsl(0, 0%, 100%);
+  --cl-neutral-400: hsl(227, 12%, 48%);
+  --cl-neutral-900: hsl(212, 21%, 14%);
+}
+/* -----UTILITY CLASSES----- */
+.flex-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* -----GENERAL STYLING----- */
+body {
+  line-height: 1.7;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--cl-neutral-400);
+  background-color: var(--cl-secondary-200);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+/* -----BUTTON----- */
+.button {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75em 1.5em;
+  background-color: var(--cl-primary-400);
+  color: var(--cl-neutral-100);
+  font-weight: var(--fw-bold);
+  font-size: 0.925rem;
+}
+.button[data-icon="shopping-cart"]::before {
+  content: "";
+  background-image: url("../images/icon-cart.svg");
+  width: 15px;
+  height: 16px;
+}
+.button:is(:hover, :focus) {
+  background-color: var(--cl-primary-500);
+}
+/* -----PRODUCT----- */
+.product {
+  --content-padding: 1.5rem;
+  --content-spacing: 1rem;
+  display: grid;
+  background-color: var(--cl-neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 600px;
+}
+.product__content {
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+.product__category {
+  font-size: 0.8125rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.product__title {
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  color: var(--cl-neutral-900);
+  line-height: 1;
+}
+.product__price {
+  font-size: 2rem;
+  font-family: var(--ff-secondary);
+  color: var(--cl-primary-400);
+}
+/* -----MEDIA QUERIES----- */
+@media (min-width: 600px) {
+  .product {
+    --content-padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
