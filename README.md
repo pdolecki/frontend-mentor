@@ -2,6 +2,8 @@
 
 Welcome to my Frontend Mentor Challenges solutions repository! Here you will find my solutions to various coding challenges provided by Frontend Mentor.
 
+<b>Note:</b><em> My focus is not on merely replicating the visual design of the challenge, but rather on mastering the art of crafting accessible, semantically sound HTML and creating optimized CSS that will take your breath away.</em>
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -47,3 +49,7 @@ To improve CSS language and user experience, custom baseline styles can be used 
 - [Scott Ohara Screen Readers Only](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
 
 Visually hidden content adds important information for users of assistive technology, bridging the gap between sighted and low vision or blind users. This content is not meant to be visually accessible, except for exceptions like skip links or hidden until hovered/focused UI.
+
+- [W3Schools HTML Semantic Elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+
+A semantic element clearly describes its meaning to both the browser and the developer. It also improves accessibility and overall quality of products.
