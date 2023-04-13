@@ -25,6 +25,7 @@ The challenges that I have completed so far are available at:
 - [Product Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/product-preview-component)
 - [Results Summary Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/results-summary-component)
 - [Interactive Rating Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/interactive-rating-component)
+- [QR Code Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/qr-code-component)
 
 ## Technologies Used
 
