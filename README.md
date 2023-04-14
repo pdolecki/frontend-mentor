@@ -27,6 +27,7 @@ The challenges that I have completed so far are available at:
 - [Interactive Rating Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/interactive-rating-component)
 - [QR Code Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/qr-code-component)
 - [NFT Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/nft-preview-card-component)
+- [Order Summary Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/order-summary-component)
 
 ## Technologies Used
 
