@@ -29,6 +29,8 @@ The challenges that I have completed so far are available at:
 - [NFT Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/nft-preview-card-component)
 - [Order Summary Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/order-summary-component)
 - [Stats Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/stats-preview-card-component)
+- [3 Column Preview Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/3-column-preview-card)
+- [Profile Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/profile-card-component)
 
 ## Technologies Used
 
