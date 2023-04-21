@@ -1,0 +1,154 @@
+:root {
+  /* -----FONTS----- */
+  --ff-primary: "Kumbh Sans", sans-serif;
+  --fs-normal: 0.75rem;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* -----COLORS----- */
+  --cl-primary: hsl(238, 29%, 16%);
+  --cl-secondary: hsl(14, 88%, 65%);
+
+  --cl-gradient-1: hsl(273, 75%, 66%);
+  --cl-gradient-2: hsl(240, 73%, 65%);
+
+  --cl-neutral-100: hsl(240, 5%, 91%);
+  --cl-neutral-400: hsl(240, 6%, 50%);
+  --cl-neutral-700: hsl(237, 12%, 33%);
+}
+/* -----GENERAL----- */
+body {
+  font-size: var(--fs-normal);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  background: linear-gradient(var(--cl-gradient-1), var(--cl-gradient-2));
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+  margin: 1rem;
+}
+.card {
+  max-width: 340px;
+  padding: 0 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+/* -----ILUSTRATION----- */
+.card .ilustration .mobile {
+  position: relative;
+  width: 160px;
+  height: 80px;
+}
+.card .ilustration .mobile img {
+  position: absolute;
+}
+.card .ilustration .mobile .image {
+  height: 160px;
+  top: -92px;
+}
+/* -----FAQ----- */
+.card .faq .title {
+  text-align: center;
+  font-weight: var(--fw-bold);
+  padding: 0 0 0.5rem;
+}
+.card .faq .section {
+  cursor: pointer;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--cl-neutral-100);
+}
+/* -----QUESTION----- */
+.card .faq .section .question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.card .faq .section .question img {
+  width: 8px;
+  height: 6px;
+}
+.card .faq .section .question h3 {
+  padding: 0.5rem 0;
+  font-size: 0.65rem;
+}
+.card .faq .section .question:hover h3 {
+  color: var(--cl-secondary);
+}
+.card .faq .section p {
+  font-size: 0.6rem;
+  padding: 0 1rem 0.5rem 0;
+  color: var(--cl-neutral-400);
+}
+/* -----ACTIVE----- */
+.card .faq .section:is(.active) .question img {
+  transform: rotate(180deg);
+}
+.card .faq .section:not(.active) .question h3 {
+  font-weight: var(--fw-regular);
+}
+.card .faq .section:not(.active) p {
+  display: none;
+}
+/* -----MEDIA QUERIES----- */
+@media (min-width: 600px) {
+  /* -----GENERAL----- */
+  .card {
+    max-width: 600px;
+    flex-direction: row;
+    padding: 3rem 4rem;
+  }
+  .card > div {
+    width: 50%;
+  }
+  .card .faq .title {
+    text-align: start;
+    font-size: 1.4rem;
+  }
+  /* -----ILUSTRATION----- */
+  .card .ilustration .mobile {
+    display: none;
+  }
+  .card .ilustration .desktop {
+    display: block !important;
+    position: relative;
+    margin-left: -4rem;
+    margin-top: -3rem;
+    width: 300px;
+    height: 280px;
+  }
+  .card .ilustration .desktop img {
+    position: absolute;
+  }
+  .card .ilustration .desktop img:is(.image) {
+    top: calc(50% - 90px);
+    left: -50px;
+    z-index: 2;
+    clip-path: inset(0 0 0 50px);
+  }
+  .card .ilustration .desktop img:is(.background) {
+    transform: scale(2);
+    left: -195px;
+    top: -10%;
+    z-index: 1;
+  }
+  .card .ilustration .desktop img:is(.box) {
+    width: 140px;
+    left: calc(-50% + 70px);
+    top: 40%;
+    transition: all 0.5s ease-in-out;
+    z-index: 3;
+  }
+  .card .ilustration .desktop img:is(.box:is(.active)) {
+    left: calc(-50% + 30px);
+  }
+}
