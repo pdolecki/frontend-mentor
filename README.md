@@ -33,6 +33,7 @@ The challenges that I have completed so far are available at:
 - [Profile Card Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/profile-card-component)
 - [FAQ Accordion Card](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/faq-accordion-card)
 - [Social Proof Section](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/social-proof-section)
+- [Article Preview Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/article-preview-component)
 
 ## Technologies Used
 
