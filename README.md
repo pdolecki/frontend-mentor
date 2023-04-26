@@ -34,6 +34,8 @@ The challenges that I have completed so far are available at:
 - [FAQ Accordion Card](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/faq-accordion-card)
 - [Social Proof Section](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/social-proof-section)
 - [Article Preview Component](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/article-preview-component)
+- [Four Card Feature Section](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/four-card-feature-section)
+- [Base Apparel Coming Soon Page](https://github.com/pdolecki/frontend-mentor/tree/main/newbie/base-apparel-coming-soon-page)
 
 ## Technologies Used
 

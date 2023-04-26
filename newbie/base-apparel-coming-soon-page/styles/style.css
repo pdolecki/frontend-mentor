@@ -1,0 +1,19 @@
+:root {
+  /* -----FONTS----- */
+  --ff-primary: "Josefin Sans", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  /* -----COLORS----- */
+  --cl-primary: hsl(0, 36%, 70%);
+  --cl-secondary: hsl(0, 93%, 68%);
+  --cl-neutral: hsl(0, 6%, 24%);
+
+  --cl-gradient-1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+  --cl-gradient-2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+/* -----GENERAL----- */
+body {
+}
