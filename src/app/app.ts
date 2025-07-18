@@ -1,16 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterOutlet],
-  template: `
-    <h1>Welcome to {{title}}!</h1>
-
-    <router-outlet />
-  `,
+  template: ` <router-outlet /> `,
   styles: [],
 })
-export class App {
-  protected title = 'frontend-mentor';
-}
+export class App {}
