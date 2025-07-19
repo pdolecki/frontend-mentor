@@ -1,0 +1,193 @@
+:root {
+  /* -----FONTS----- */
+  --ff-primary: "League Spartan", sans-serif;
+
+  --fs-small: 0.6875rem;
+  --fs-regular: 0.9375rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* -----COLORS----- */
+  --cl-primary-200: hsl(333, 80%, 67%);
+  --cl-primary-700: hsl(300, 43%, 22%);
+
+  --cl-neutral-100: hsl(0, 0%, 100%);
+  --cl-neutral-300: hsl(300, 24%, 96%);
+  --cl-neutral-600: hsl(303, 10%, 53%);
+}
+/* -----GENERAL----- */
+body,
+html {
+  height: auto;
+}
+body {
+  background: url(../images/bg-pattern-top-mobile.svg),
+    url(../images/bg-pattern-bottom-mobile.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+  color: var(--cl-primary-700);
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+.article {
+  max-width: 300px;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+/* -----OVERVIEW INTRO----- */
+.overview .intro {
+  text-align: center;
+}
+.overview .intro h1 {
+  font-size: 1.4rem;
+  line-height: 0.8;
+  letter-spacing: -1px;
+  padding: 0 1rem 0.5rem 1rem;
+}
+.overview .intro p {
+  font-size: var(--fs-small);
+  color: var(--cl-neutral-600);
+  font-weight: var(--fw-medium);
+}
+/* -----OVERVIEW RATINGS----- */
+.overview .ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.overview .ratings .rating {
+  text-align: center;
+  background-color: var(--cl-neutral-300);
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border: 2px solid white;
+}
+.overview .ratings .rating > div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.overview .ratings .rating > div img {
+  width: 10px;
+  height: 10px;
+}
+.overview .ratings .rating > h3 {
+  font-size: var(--fs-small);
+  padding-top: 0.25rem;
+}
+/* -----REVIEWS----- */
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.reviews .review {
+  background-color: var(--cl-primary-700);
+  border-radius: 0.25rem;
+  padding: 1.5rem 1.2rem 1.2rem;
+  font-size: var(--fs-small);
+}
+.reviews .review > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* -----REVIEW AVATAR----- */
+.reviews .review .avatar img {
+  width: 1.5rem;
+  border-radius: 4rem;
+  overflow: hidden;
+}
+/* -----REVIEW AUTHOR----- */
+.reviews .review .author {
+  line-height: 1.1;
+}
+.reviews .review .author > h4 {
+  color: var(--cl-neutral-100);
+  font-weight: var(--fw-medium);
+}
+.reviews .review .author > span {
+  color: var(--cl-primary-200);
+  font-weight: var(--fw-regular);
+  font-size: 0.6rem;
+}
+/* -----REVIEW CONTENT----- */
+.reviews .review .content {
+  color: var(--cl-neutral-100);
+  margin-top: 1rem;
+  line-height: 1.1;
+}
+/* -----MEDIA QUERIES----- */
+@media (min-width: 600px) {
+  body {
+    background: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+  }
+  .article {
+    max-width: 900px;
+  }
+  /* -----OVERVIEW----- */
+  .overview {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .overview .intro {
+    width: 50%;
+    text-align: start;
+  }
+  .overview .intro > h1 {
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .overview .intro > p {
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+  .overview .ratings {
+    width: 50%;
+  }
+  .overview .ratings .rating:nth-child(2) {
+    margin-left: 5%;
+  }
+  .overview .ratings .rating:nth-child(3) {
+    margin-left: 10%;
+  }
+  .overview .ratings .rating {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  /* -----REVIEWS----- */
+  .reviews {
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .reviews .review {
+    height: fit-content;
+  }
+  .reviews .review:nth-child(2) {
+    margin-top: 5%;
+  }
+  .reviews .review:nth-child(3) {
+    margin-top: 10%;
+  }
+}

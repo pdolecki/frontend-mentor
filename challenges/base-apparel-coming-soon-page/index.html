@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./index.js" async></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#" target="_blank"
+          ><img src="./images/logo.svg" alt="Base Apparel Logo"
+        /></a>
+      </nav>
+    </header>
+    <main class="container">
+      <picture class="hero">
+        <source srcset="./images/hero-desktop.jpg" media="(min-width: 600px)" />
+        <img
+          src="./images/hero-mobile.jpg"
+          alt="Image of a woman waiting and looking into camera."
+        />
+      </picture>
+
+      <article class="content">
+        <span class="content__title-1">WE'RE</span>
+        <h1 class="content__title-2">COMING SOON</h1>
+        <p class="content__description">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form class="content__form">
+          <input
+            class="input"
+            type="email"
+            placeholder="Email Address"
+            required
+          />
+          <button class="button" type="submit">
+            <img src="./images/icon-arrow.svg" alt="Arrow Icon" />
+          </button>
+          <img
+            class="error-icon"
+            src="./images/icon-error.svg"
+            alt="Error Icon"
+            style="display: none"
+          />
+          <p class="error-message" style="display: none">
+            Please provide a valid email
+          </p>
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

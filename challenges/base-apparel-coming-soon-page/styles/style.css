@@ -1,0 +1,216 @@
+:root {
+  /* -----FONTS----- */
+  --ff-primary: "Josefin Sans", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  /* -----COLORS----- */
+  --cl-primary: hsl(0, 36%, 70%);
+  --cl-secondary: hsl(0, 93%, 68%);
+  --cl-neutral: hsl(0, 6%, 24%);
+
+  --cl-gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --cl-gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+/* -----GENERAL----- */
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: var(--ff-primary);
+  color: var(--cl-primary);
+  height: auto;
+  background-image: var(--cl-gradient-1);
+  background-attachment: fixed;
+  display: grid;
+  place-content: center;
+}
+/* -----LOGO----- */
+header nav a {
+  margin: 2rem;
+  display: flex;
+}
+header nav a img {
+  height: 1.25rem;
+}
+/* -----HERO----- */
+.hero {
+  height: 250px;
+}
+.hero img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+}
+/* -----CONTENT----- */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 4rem 2rem;
+}
+/* -----CONTENT INFORMATIONS----- */
+.content__title-1 {
+  font-weight: var(--fw-light);
+  margin-bottom: -0.75rem;
+}
+.content__title-2 {
+  text-align: center;
+  color: var(--cl-neutral);
+}
+.content__title-1,
+.content__title-2 {
+  font-size: 2.4rem;
+  letter-spacing: 10px;
+  line-height: 1;
+}
+.content__description {
+  text-align: center;
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+/* -----INPUT FORM----- */
+.content__form {
+  width: 90%;
+  position: relative;
+}
+.content__form .input {
+  outline: none;
+  border: 1px solid var(--cl-primary);
+  color: var(--cl-primary);
+  background-color: transparent;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  width: 100%;
+  height: 2.75rem;
+}
+.content__form .input::placeholder {
+  color: var(--cl-primary);
+  font-size: 0.825rem;
+}
+.content__form .button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  height: 2.75rem;
+  width: 3.75rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: var(--cl-gradient-2);
+  box-shadow: var(--cl-secondary) 0px 20px 30px -10px;
+}
+.content__form .button:hover {
+  filter: brightness(1.2);
+}
+.content__form .button img {
+  margin: 0 auto;
+  height: 18px;
+}
+/* -----INPUT FORM ERRORS----- */
+.content__form.error .input {
+  border: 2px solid var(--cl-secondary);
+}
+.content__form.error .error-icon {
+  display: block !important;
+  position: absolute;
+  right: 4.5rem;
+  top: 0.75rem;
+  height: 1.5rem;
+}
+.content__form.error .error-message {
+  display: block !important;
+  font-size: 0.825rem;
+  color: var(--cl-secondary);
+  margin: 0.25rem 1rem;
+}
+/* -----MEDIA QUERIES----- */
+@media (min-width: 600px) {
+  .hero {
+    height: 350px;
+  }
+  .hero img {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .content__form {
+    width: 50%;
+  }
+  .content__description {
+    inline-size: 500px;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    position: absolute;
+    margin-left: 10%;
+  }
+  header nav a {
+    margin: 4rem 0;
+  }
+  header nav a img {
+    height: 2rem;
+  }
+  .container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .container .hero {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    max-width: 50%;
+  }
+  .container .hero img {
+    width: 100%;
+    height: 100%;
+  }
+  .content {
+    align-items: start;
+    justify-content: center;
+    margin: 0 10%;
+  }
+  .content__title-1,
+  .content__title-2 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    line-height: 1;
+    text-align: start;
+  }
+  .content__title-2 {
+    word-spacing: 100vw;
+  }
+  .content__description {
+    text-align: start;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+  .content__form {
+    max-width: 500px;
+  }
+  .content__form .input {
+    height: 3.5rem;
+  }
+  .content__form .button {
+    height: 3.5rem;
+    width: 6rem;
+  }
+  .content__form .input::placeholder,
+  .content__form.error .error-message {
+    font-size: 1rem;
+  }
+  .content__form.error .error-icon {
+    height: 2rem;
+    right: 7rem;
+  }
+}
